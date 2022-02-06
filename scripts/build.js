@@ -10,7 +10,7 @@ if (!fs.existsSync(public)) {
 }
 
 function logAndCreate(content, filename) {
-  const filepath = path.join(public, `${filename}`);
+  const filepath = path.join(public, `${filename}.html`);
   if (fs.existsSync(filepath)) {
     console.log('INFO: file already exists ' + filepath);
   } else {
@@ -27,5 +27,5 @@ ROUTES.map((page) => {
 });
 
 // filepath needs to be relative to the templater
-Templater('./views/index.tmpl', { title: 'home', view: 'index' }, (_, content) => logAndCreate(content, 'index.html'));
-Templater('./views/404.tmpl', { title: 'Page not found' }, (_, content) => logAndCreate(content, '404.html'));
+Templater('./views/index.tmpl', { title: 'home', view: 'index' }, (_, content) => logAndCreate(content, 'index'));
+Templater('./views/404.tmpl', { title: 'Page not found' }, (_, content) => logAndCreate(content, '404'));

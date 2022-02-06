@@ -251,7 +251,7 @@ const Dora = {
 
     Dora.findToken('next', content).map((target) => {
       const nextKey = target.replaceAll('%', '').trim().split(':')[1];
-      const nextTmpl = `<hr />\nNext module: <a href="${nextKey}">${nextKey}</a> | <a href="/">Home</a>`;
+      const nextTmpl = `<hr />\nNext module: <a href="/${nextKey}.html">${nextKey}</a> | <a href="/">Home</a>`;
       hydrated = hydrated.replace(target, nextTmpl);
     });
 
@@ -287,7 +287,7 @@ const Templater = function (filePath, options, callback) {
   // special case
   if (filePath.includes('index.tmpl')) {
     // TODO: make this another supported template %links:some-json-file% ?
-    const generatedList = ROUTES.map((route) => `<li><a href="${route}">${route}</a></li>\n`);
+    const generatedList = ROUTES.map((route) => `<li><a href="/${route}.html">${route}</a></li>\n`);
     const nestedContent = hydrated.toString().replace('%routes%', generatedList.join(''));
     const styleSheet = Dora.find(`./stylesheets/${options.view}.css`);
 
