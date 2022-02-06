@@ -4,7 +4,7 @@ const { Templater, Dora } = require('../templater');
 const { ROUTES } = require('../config');
 
 // ensure public directory exists
-const public = path.join(__dirname, '../public');
+const public = path.join(__dirname, '../docs');
 if (!fs.existsSync(public)) {
   fs.mkdirSync(public);
 }
