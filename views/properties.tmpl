@@ -1,0 +1,38 @@
+<p>CSS properties are declared by name in a stylesheet, or inline on HTML elements directly.</p>
+
+<p>Properties are:</p>
+<ul>
+  <li>plain english words</li>
+  <li>hyphenated</li>
+  <li>all lowercase</li>
+</ul>
+
+<p>Some examples of common properties include %highlight:display%, %highlight:font-size%, %highlight:width%, etc. We will cover these properties by category later on.</p>
+
+<p>Aside from global keyword values, the values you declare for a property are - generally - specific to that property. What that means is that values that work for one property are not guaranteed to work with other properties.</p>
+
+<p>For example, when declaring values for the %highlight:display% property, valid values include %highlight:block%, %highlight:inline-block%, %highlight:flex%, etc.</p>
+
+<p>The same values would have no effect for the property %highlight:width%.</p>
+
+<p>Here's a more detailed example:</p>
+
+%snippet:values%
+
+<p>Oh but wait, there are some global keyword values that are valid to use for every property, such as %highlight:inherit%, and %highlight:initial%. More on this later.</p>
+
+<p>Annoying, right?</p>
+
+<p>Also please be aware that CSS values that do not affect the property they are declared for will fail silently and the property value will fallback to a browser default, or nothing.</p>
+
+<p>When declaring properties, some properties may only have effect on HTML elements with specific rendering behavior, or elements with specific layout attribute declarations.</p>
+
+<p>For example, dimension-specific properties like %highlight:min-height% and %highlight:width% will only affect box elements. The layout properties %highlight:top% and %highlight:left% will only have an effect on box elements with the CSS property %highlight:position% set to %highlight:absolute% or %highlight:fixed%.</p>
+
+%snippet:properties%
+
+<p>More on this later.</p>
+
+For a comprehensive list of CSS properties available in browsers, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index">check out this MDN article</a>.
+
+%next:selectors%

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cssbyexample - units</title>
+    <style>
+      pre {
+        color: initial;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: helvetica, Arial, sans-serif;
+        line-height: 1.45em;
+      }
+      #container-b {
+        width: 90%;
+        max-width: 720px;
+        margin: auto;
+        margin-bottom: 120px;
+      }
+      h1 {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+      }
+      p {
+        margin-top: 1.2em;
+        margin-bottom: 1.2em;
+        max-width: 680px;
+        max-width: 85ch;
+      }
+      li {
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+        max-width: 680px;
+        max-width: 85ch;
+      }
+      hr {
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+      }
+      ul {
+        padding: unset;
+        margin: unset;
+        padding-left: 1.25em;
+      }
+      a {
+        color: #000;
+      }
+      a:visited {
+        color: initial;
+      }
+      .t-highlight {
+        background-color: whitesmoke;
+        color: indianred;
+        padding: 2px;
+        border-radius: 2px;
+      }
+      .codeblock-container {
+        border-radius: 0.5em;
+        background-color: whitesmoke;
+        padding: 1em;
+        font-family: monospace;
+        overflow-x: auto;
+        overflow-y: hidden;
+        line-height: initial;
+      }
+      .codeblock-line {
+        display: block;
+        color: blue;
+      }
+      .codeblock-text {
+        display: block;
+        color: black;
+      }
+      .codeblock-comment {
+        color: green;
+      }
+      .codetag-content {
+        color: black;
+      }
+      .codetag-attr {
+        color: dodgerblue;
+      }
+      .codetag-value {
+        color: orangered;
+      }
+      .codetag-caret {
+        color: gray;
+      }
+    </style>
+    <style>
+      %stylesheet%
+    </style>
+  </head>
+  <body>
+    <div id="container-b">
+      <h1><a href="/" style="text-decoration:none;">CSS by Example</a>: units</h1>
+      <hr />
+      <p>When working with CSS, units help describe the expression of values. Here are some examples.</p>
+
+<p>Pixel units</p>
+<ul>
+  <li><span class="t-highlight">px</span> - raw pixel count</li>
+  <li><span class="t-highlight">&#37;</span> - a ratio of the maximum pixel count available</li>
+  <li><span class="t-highlight">dpi</span> - pixel density, expressed as a numeric ratio (100 -> 1, 25 -> .25)</li>
+</ul>
+
+<p>Typography units</p>
+<ul>
+  <li><span class="t-highlight">em</span> - raw pixel count</li>
+  <li><span class="t-highlight">rem</span> - a ratio of the maximum pixel count</li>
+  <li><span class="t-highlight">ch</span> - a ratio of the maximum pixel count</li>
+</ul>
+
+<p>Viewport units</p>
+<ul>
+  <li><span class="t-highlight">vh</span> - viewport width, expressed as a numeric ratio (100 -> 1, 50 -> .5)</li>
+  <li><span class="t-highlight">vw</span> - viewport width, expressed as a numeric ratio (100 -> 1, 50 -> .5)</li>
+</ul>
+
+<p>Distance units</p>
+<ul>
+  <li><span class="t-highlight">s</span> - seconds</li>
+  <li><span class="t-highlight">deg</span> - degrees, expressed as a numeric ratio (360 -> 1, 45 -> .25)</li>
+</ul>
+
+<p>Units are contextual, and only apply to specific values of specific properties of specific HTML elements. Bear with me.</p>
+
+<p>In this site, we will cover some commonly used values for commonly used properties, after we are introduced to some core concepts.</p>
+
+<p>Further Reading: <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">(MDN) CSS building blocks</a></p>
+
+<hr />
+Next module: <a href="values">values</a> | <a href="/">Home</a>
+    </div>
+  </body>
+</html>

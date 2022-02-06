@@ -1,0 +1,34 @@
+/* tag selectors */
+html, body {
+  /* styles to be attributed to the full HTML document */
+}
+p {
+  /* styles impacting all p tags in the document */
+}
+
+/* class selector */
+.highlight {
+  /* will target all elements with the attribute class="highlight" */
+}
+
+/* id selector */
+#some-id {
+  /* will only target an element with the attribute id="some-id" */
+}
+
+/* compound selectors */
+p.highlight {
+  /* will only target p class="highlight" elements */
+}
+
+p.highlight.combo {
+  /* will only target p class="highlight combo" elements */
+}
+
+p.highlight a {
+  /* will target all a tags inside a p tag*/
+}
+
+p a span#highlight {
+  /* p -> a -> span */
+} 

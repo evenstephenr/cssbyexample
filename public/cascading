@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cssbyexample - cascading</title>
+    <style>
+      pre {
+        color: initial;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: helvetica, Arial, sans-serif;
+        line-height: 1.45em;
+      }
+      #container-b {
+        width: 90%;
+        max-width: 720px;
+        margin: auto;
+        margin-bottom: 120px;
+      }
+      h1 {
+        margin-top: 1.25em;
+        margin-bottom: 1.25em;
+      }
+      p {
+        margin-top: 1.2em;
+        margin-bottom: 1.2em;
+        max-width: 680px;
+        max-width: 85ch;
+      }
+      li {
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+        max-width: 680px;
+        max-width: 85ch;
+      }
+      hr {
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+      }
+      ul {
+        padding: unset;
+        margin: unset;
+        padding-left: 1.25em;
+      }
+      a {
+        color: #000;
+      }
+      a:visited {
+        color: initial;
+      }
+      .t-highlight {
+        background-color: whitesmoke;
+        color: indianred;
+        padding: 2px;
+        border-radius: 2px;
+      }
+      .codeblock-container {
+        border-radius: 0.5em;
+        background-color: whitesmoke;
+        padding: 1em;
+        font-family: monospace;
+        overflow-x: auto;
+        overflow-y: hidden;
+        line-height: initial;
+      }
+      .codeblock-line {
+        display: block;
+        color: blue;
+      }
+      .codeblock-text {
+        display: block;
+        color: black;
+      }
+      .codeblock-comment {
+        color: green;
+      }
+      .codetag-content {
+        color: black;
+      }
+      .codetag-attr {
+        color: dodgerblue;
+      }
+      .codetag-value {
+        color: orangered;
+      }
+      .codetag-caret {
+        color: gray;
+      }
+    </style>
+    <style>
+      %stylesheet%
+    </style>
+  </head>
+  <body>
+    <div id="container-b">
+      <h1><a href="/" style="text-decoration:none;">CSS by Example</a>: cascading</h1>
+      <hr />
+      <p>In the previous example, three different stylesheets were being referenced on the page.</p>
+
+<div class="codeblock-container">
+<span class="codeblock-line"><span class="codetag-caret">&#60;</span>html<span class="codetag-caret">&#62;</span></span>
+<span class="codeblock-line">&nbsp;&nbsp;<span class="codetag-caret">&#60;</span>head<span class="codetag-caret">&#62;</span></span>
+<span class="codeblock-comment">&nbsp;&nbsp;&nbsp;&nbsp;&#60;!-- internal link to stylesheet --&#62;</span>
+<span class="codeblock-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="codetag-caret">&#60;</span>link&nbsp;<span class="codetag-attr">rel</span><span class="codetag-content">=</span><span class="codetag-value">"stylesheet"</span>&nbsp;<span class="codetag-attr">href</span><span class="codetag-content">=</span><span class="codetag-value">"./styles.css"</span>&nbsp;<span class="codetag-caret">&#47;</span><span class="codetag-caret">&#62;</span></span>
+<span class="codeblock-comment">&nbsp;&nbsp;&nbsp;&nbsp;&#60;!-- external link to stylesheet --&#62;</span>
+<span class="codeblock-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="codetag-caret">&#60;</span>link&nbsp;<span class="codetag-attr">rel</span><span class="codetag-content">=</span><span class="codetag-value">"stylesheet"</span>&nbsp;<span class="codetag-attr">href</span><span class="codetag-content">=</span><span class="codetag-value">"https://external.domain/styles.css"</span>&nbsp;<span class="codetag-caret">&#47;</span><span class="codetag-caret">&#62;</span></span>
+<span class="codeblock-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="codetag-caret">&#60;</span>style<span class="codetag-caret">&#62;</span></span>
+<span class="codeblock-comment">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* inline style tag */</span>
+<span class="codeblock-line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="codetag-caret">&#60;</span><span class="codetag-caret">&#47;</span>style<span class="codetag-caret">&#62;</span></span>
+<span class="codeblock-line">&nbsp;&nbsp;<span class="codetag-caret">&#60;</span><span class="codetag-caret">&#47;</span>head<span class="codetag-caret">&#62;</span></span>
+<span class="codeblock-line">&nbsp;&nbsp;<span class="codetag-caret">&#60;</span>body<span class="codetag-caret">&#62;</span></span>
+<span class="codeblock-comment">&nbsp;&nbsp;&nbsp;&nbsp;&#60;!-- --&#62;</span>
+<span class="codeblock-line">&nbsp;&nbsp;<span class="codetag-caret">&#60;</span><span class="codetag-caret">&#47;</span>body<span class="codetag-caret">&#62;</span></span>
+<span class="codeblock-line"><span class="codetag-caret">&#60;</span><span class="codetag-caret">&#47;</span>html<span class="codetag-caret">&#62;</span></span>
+<span class="codeblock-text"></span>
+</div>
+
+
+<p>All three stylesheets will apply to the page, and some of them may override or extend others.</p>
+
+<p>This is known as cascading behavior.</p>
+
+<p>overrides using color, extending using %, etc.</p>
+
+<p>you can break cascading behavior using specificity (provide link), but proceed with caution</p>
+    </div>
+  </body>
+</html>

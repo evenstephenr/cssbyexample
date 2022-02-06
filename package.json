@@ -1,0 +1,19 @@
+{
+  "name": "cssbyexample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "build": "node ./scripts/build.js",
+    "clean": "node ./scripts/clean.js"
+  },
+  "author": "evenstephenr",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
